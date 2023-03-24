@@ -74,6 +74,10 @@ form {
     color: white;
 }
 
+.form-input .hidden {
+    display: none;
+}
+
 .form-input > input:focus::placeholder {
     color: transparent;
 }
@@ -95,6 +99,11 @@ form {
 .submit-button:hover {
     background-color: rgb(13, 163, 28);
     cursor: pointer;
+}
+
+.submit-button:disabled {
+    background-color: lightgrey;
+    cursor: not-allowed;
 }
 
 .theme-container {
