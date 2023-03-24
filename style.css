@@ -1,0 +1,144 @@
+body {
+    font-family: sans-serif
+}
+
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+.form-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-theme form {
+    border-top: 1px solid white;
+    padding-top: 50px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-input > input{
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.dark-theme .form-input > input {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.form-input > label {
+    position: absolute;
+    top: -9px;
+    margin-left: 15px;
+    padding: 0 5px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.dark-theme .form-input > label{
+    background-color: black;
+}
+
+.form-input > span {
+    display: flex;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    padding-left: 5px;
+    background: red;
+    color: white;
+}
+
+.form-input > input:focus::placeholder {
+    color: transparent;
+}
+
+.submit-button {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 3px;
+    font-size: 1.2em;
+    background-color: rgba(13, 163, 28, 0.7);
+    color: white;
+}
+
+.dark-theme .submit-button {
+    border-color: white;
+}
+
+.submit-button:hover {
+    background-color: rgb(13, 163, 28);
+    cursor: pointer;
+}
+
+.theme-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.theme-container > svg {
+   width: 20px;
+}
+
+.theme-container > input.theme-switcher {
+    position: relative;
+    -webkit-appearance: none;
+    outline: none;
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #D9DADC;
+    border-radius: 50px;
+    box-shadow: inset -20px 0 0 0 #fff;
+  }
+  
+  .theme-container > input.theme-switcher:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: transparent;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+  }
+  
+  .theme-container > input.theme-switcher:checked {
+    box-shadow: inset 20px 0 0 0 rgb(47, 47, 47);
+    border-color: white;
+  }
+  
+  .theme-container > input.theme-switcher:checked:after {
+    left: 20px;
+    box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
+  }
