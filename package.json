@@ -1,0 +1,24 @@
+{
+  "name": "web-technologies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkhalyapin/mstu-web-technologies.git"
+  },
+  "author": "dkhalyapin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkhalyapin/mstu-web-technologies/issues"
+  },
+  "homepage": "https://github.com/dkhalyapin/mstu-web-technologies#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
