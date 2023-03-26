@@ -48,6 +48,7 @@ form {
 .dark-theme .form-input > input {
     background-color: black;
     border: 1px solid white;
+    color: white;
 }
 
 .form-input > label {
